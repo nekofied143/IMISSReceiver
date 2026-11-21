@@ -41,13 +41,3 @@ Instead of navigating a full desktop dashboard on a phone, staff can sign in wit
 - **Account:** Active IMISS staff account (first-time users should update any temporary password on the main IMISS web portal before signing in)
 
 ---
-
-## Building the App
-
-```bash
-# Build the debug APK
-gradle assembleDebug
-
-# Run unit tests
-gradle :app:testDebugUnitTest
-```
