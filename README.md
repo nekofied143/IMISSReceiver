@@ -1,14 +1,16 @@
 # IMISS Logs
 
-![Platform](https://img.shields.io/badge/Platform-Android-3DDC84?logo=android&logoColor=white)
-![Minimum Android Version](https://img.shields.io/badge/Android-7.0%2B-3DDC84)
-![Interface](https://img.shields.io/badge/Interface-Material%203-6750A4)
-![Time Zone](https://img.shields.io/badge/Time%20Zone-PHT-2563EB)
+[![Latest Release](https://img.shields.io/github/v/release/nekofied143/IMISSReceiver?logo=github&label=Latest%20Release)](https://github.com/nekofied143/IMISSReceiver/releases/latest)
 [![Total Downloads](https://img.shields.io/github/downloads/nekofied143/IMISSReceiver/total?label=Downloads&logo=github&color=blue)](https://github.com/nekofied143/IMISSReceiver/releases)
+![Android](https://img.shields.io/badge/Android-7.0%2B-3DDC84?logo=android&logoColor=white)
+![Material 3](https://img.shields.io/badge/UI-Material%203-6750A4)
+![Time Zone](https://img.shields.io/badge/Time%20Zone-PHT-2563EB)
 
 **IMISS Logs** is an Android companion app for the **Integrated Management Information System Section (IMISS) Work Logs** system. It helps IMISS technical staff monitor assigned work logs, update ticket progress, and refer active tasks to colleagues directly from their mobile devices.
 
-Designed for day-to-day technical support operations, the app keeps work-log management focused, accessible, and consistent across duty shifts.
+Designed for day-to-day technical support operations, the app keeps work-log management focused and consistent across duty shifts.
+
+**[Download the latest release](https://github.com/nekofied143/IMISSReceiver/releases/latest)** · [View all releases](https://github.com/nekofied143/IMISSReceiver/releases)
 
 ## Overview
 
@@ -50,7 +52,7 @@ The app supports three main goals:
 IMISS Logs is distributed through the **Releases** section of this GitHub repository. Download the latest available Android APK from the official release assets.
 
 1. Open the repository's [Releases page](https://github.com/nekofied143/IMISSReceiver/releases) (or select **Releases** in the repository sidebar).
-2. Choose the release marked **Latest**.
+2. Choose the release marked **Latest** (or use the [latest-release shortcut](https://github.com/nekofied143/IMISSReceiver/releases/latest)).
 3. Expand **Assets**, if necessary, and download the `.apk` installation file.
 4. Open the downloaded APK on your Android device and follow the on-screen installation prompts.
 5. If Android blocks installation from that source, enable **Allow from this source** for the app you used to open the APK, only after verifying that the release is from the official repository.
@@ -59,6 +61,15 @@ IMISS Logs is distributed through the **Releases** section of this GitHub reposi
 > **Security note:** Download APKs only from this repository's official Releases page. Avoid third-party mirrors and disable permission to install unknown apps afterward if it is no longer needed.
 
 > **Account note:** If you have a temporary password, change it on the main IMISS web portal before signing in to the Android app.
+
+### Updating the App
+
+1. Visit the [latest release](https://github.com/nekofied143/IMISSReceiver/releases/latest) and review its release notes.
+2. Download the new APK from **Assets**.
+3. Open the APK and follow Android’s prompts to update the installed app, if the package identity and signing certificate match your existing installation.
+4. Reopen IMISS Logs and sign in if prompted.
+
+> **Important:** Do not uninstall the existing app just to update it unless your IMISS administrator instructs you to. If Android reports that the update cannot be installed, contact your administrator rather than removing the app or using an APK from another source.
 
 ## Using the App
 
@@ -107,6 +118,17 @@ A clear referral reason helps the receiving staff member understand why the task
 
 Enable app notifications if you want alerts for new assignments. You can also pull down to refresh the ticket list manually.
 
+## Notifications
+
+To receive assignment alerts, make sure notifications are allowed for IMISS Logs:
+
+1. Open **Settings → Apps → IMISS Logs → Notifications** on your Android device (menu names vary by manufacturer).
+2. Enable notifications for the app, if the option is available.
+3. Check that the device has connectivity to the IMISS service.
+4. If alerts do not appear, open the app and pull down to refresh the assigned work-log list.
+
+On Android versions that request notification permission, allow it when prompted. Device power-saving settings and connectivity may affect delivery; manual refresh remains available.
+
 ## Quick Reference
 
 | I want to… | Action |
@@ -127,6 +149,23 @@ Enable app notifications if you want alerts for new assignments. You can also pu
 | **New assignments are not appearing** | Refresh the queue and check that your device has connectivity to the IMISS service. |
 | **No assignment alerts** | Check whether app notifications are enabled on your Android device. |
 | **App cannot reconnect** | Check connectivity to the IMISS environment and contact your IMISS administrator if the issue continues. |
+
+## Frequently Asked Questions
+
+**Do I need a separate account for the Android app?**  
+No. Sign in using your existing authorized IMISS staff account.
+
+**Why can’t I sign in with my temporary password?**  
+Change the temporary password through the main IMISS web portal first, then sign in to the app.
+
+**Why can’t I see a work log?**  
+The app shows work logs assigned to your account. Check **Open**, **In Progress**, and **Resolved**, then refresh. Contact your administrator if an expected assignment is still missing.
+
+**Where can I get the latest APK?**  
+Use the official [GitHub Releases page](https://github.com/nekofied143/IMISSReceiver/releases). Avoid third-party downloads.
+
+**Does the Downloads badge show the number of users?**  
+No. It counts GitHub release-asset downloads, not unique people, devices, or installations.
 
 ## Usage and Access
 
