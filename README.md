@@ -4,6 +4,7 @@
 ![Minimum Android Version](https://img.shields.io/badge/Android-7.0%2B-3DDC84)
 ![Interface](https://img.shields.io/badge/Interface-Material%203-6750A4)
 ![Time Zone](https://img.shields.io/badge/Time%20Zone-PHT-2563EB)
+[![Total Downloads](https://img.shields.io/github/downloads/nekofied143/IMISSReceiver/total?label=Downloads&logo=github&color=blue)](https://github.com/nekofied143/IMISSReceiver/releases)
 
 **IMISS Logs** is an Android companion app for the **Integrated Management Information System Section (IMISS) Work Logs** system. It helps IMISS technical staff monitor assigned work logs, update ticket progress, and refer active tasks to colleagues directly from their mobile devices.
 
@@ -48,8 +49,8 @@ The app supports three main goals:
 
 IMISS Logs is distributed through the **Releases** section of this GitHub repository. Download the latest available Android APK from the official release assets.
 
-1. Open the repository's [Releases page](../../releases) (or select **Releases** in the repository sidebar).
-2. Choose the release marked **Latest**.
+1. Open the repository's [Releases page](https://github.com/nekofied143/IMISSReceiver/releases) (or select **Releases** in the repository sidebar).
+2. Choose the release marked **Latest**. The screenshot provided shows **v2.0.8** as the latest release at that time; a newer version may now be available.
 3. Expand **Assets**, if necessary, and download the `.apk` installation file.
 4. Open the downloaded APK on your Android device and follow the on-screen installation prompts.
 5. If Android blocks installation from that source, enable **Allow from this source** for the app you used to open the APK, only after verifying that the release is from the official repository.
