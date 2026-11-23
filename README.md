@@ -46,14 +46,18 @@ The app supports three main goals:
 
 ### Installation
 
-The distribution method and installation package are not specified in this documentation. Obtain the approved IMISS Logs Android installation package or installation instructions from your IMISS administrator.
+IMISS Logs is distributed through the **Releases** section of this GitHub repository. Download the latest available Android APK from the official release assets.
 
-1. Obtain the app through the **approved IMISS distribution channel**.
-2. Follow the installation instructions provided by your administrator.
-3. Open **IMISS Logs** after installation.
-4. Sign in using your existing IMISS staff credentials.
+1. Open the repository's [Releases page](../../releases) (or select **Releases** in the repository sidebar).
+2. Choose the release marked **Latest**. The screenshot provided shows **v2.0.8** as the latest release at that time; a newer version may now be available.
+3. Expand **Assets**, if necessary, and download the `.apk` installation file.
+4. Open the downloaded APK on your Android device and follow the on-screen installation prompts.
+5. If Android blocks installation from that source, enable **Allow from this source** for the app you used to open the APK, only after verifying that the release is from the official repository.
+6. Launch **IMISS Logs** and sign in with your existing IMISS staff credentials.
 
-> **Security note:** Install only packages distributed or approved by your organization. Do not download unofficial APKs or share your staff credentials.
+> **Security note:** Download APKs only from this repository's official Releases page. Avoid third-party mirrors and disable permission to install unknown apps afterward if it is no longer needed.
+
+> **Account note:** If you have a temporary password, change it on the main IMISS web portal before signing in to the Android app.
 
 ## Using the App
 
