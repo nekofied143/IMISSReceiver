@@ -26,13 +26,14 @@ The app supports three main goals:
 
 | Feature | Description |
 | --- | --- |
-| **Secure staff sign-in** | Access the app using an existing IMISS staff account, with session persistence and reconnection handling at startup. |
+| **Staff account sign-in** | Access the app using an existing IMISS staff account, with session persistence and reconnection handling at startup. |
 | **Assigned work-log queue** | See only assigned tickets, organized into **Open**, **In Progress**, and **Resolved** tabs. |
 | **Status counts and navigation** | Review ticket counts and swipe horizontally between status tabs. |
 | **Ticket progress tracking** | Move work logs through **Open → In Progress → Resolved** and optionally add remarks to document actions taken. |
 | **Staff referrals** | Refer an active ticket to a colleague, selecting a referral category and entering a required reason. |
 | **Assignment notifications** | Receive alerts about newly assigned work logs when notifications are enabled. |
 | **Manual refresh** | Pull down to refresh the work-log queue on demand. |
+| **In-app updates** | Update an existing installation directly through the app without uninstalling it. |
 | **Adaptive appearance** | Use a Material 3 interface that follows the device's light or dark theme on supported phones and tablets. |
 | **Philippine Time** | View timestamped ticket remarks in **Philippine Time (PHT)** for consistent activity records. |
 
@@ -64,12 +65,15 @@ IMISS Logs is distributed through the **Releases** section of this GitHub reposi
 
 ### Updating the App
 
-1. Visit the [latest release](https://github.com/nekofied143/IMISSReceiver/releases/latest) and review its release notes.
-2. Download the new APK from **Assets**.
-3. Open the APK and follow Android’s prompts to update the installed app, if the package identity and signing certificate match your existing installation.
-4. Reopen IMISS Logs and sign in if prompted.
+**Existing users can update IMISS Logs directly inside the app.** You do not need to uninstall the current version or manually download an APK for routine updates.
 
-> **Important:** Do not uninstall the existing app just to update it unless your IMISS administrator instructs you to. If Android reports that the update cannot be installed, contact your administrator rather than removing the app or using an APK from another source.
+1. Use the app's built-in update feature when an update is available.
+2. Follow the instructions shown by the app and Android to complete the update.
+3. Reopen IMISS Logs if prompted.
+
+You can also review the latest version and its release notes on the [GitHub Releases page](https://github.com/nekofied143/IMISSReceiver/releases/latest). For a fresh installation, use the APK provided under that release's **Assets**.
+
+> **Update safety:** Do not uninstall the app merely to update it. If an in-app update fails, contact your IMISS system administrator. Use only updates provided by the app or the official GitHub repository.
 
 ## Using the App
 
@@ -127,7 +131,7 @@ To receive assignment alerts, make sure notifications are allowed for IMISS Logs
 3. Check that the device has connectivity to the IMISS service.
 4. If alerts do not appear, open the app and pull down to refresh the assigned work-log list.
 
-On Android versions that request notification permission, allow it when prompted. Device power-saving settings and connectivity may affect delivery; manual refresh remains available.
+On Android versions that request notification permission, allow it when prompted. If alerts are delayed or missing, also check **Battery** settings for IMISS Logs and whether Android is restricting its background activity. Exact options vary by device; avoid disabling system-wide battery protections unnecessarily. Connectivity, Do Not Disturb, and manufacturer-specific power-saving settings may also affect alerts. Manual refresh remains available.
 
 ## Quick Reference
 
@@ -138,7 +142,8 @@ On Android versions that request notification permission, allow it when prompted
 | Record what I did | Add a ticket remark during a status update |
 | Complete a ticket | Tap **Mark Resolved** |
 | Hand off active work | Tap **Refer**, select a colleague and category, and enter a reason |
-| Check for updates | Pull down to refresh |
+| Refresh assigned work logs | Pull down to refresh |
+| Update the installed app | Use the built-in app update feature |
 
 ## Troubleshooting
 
@@ -147,7 +152,8 @@ On Android versions that request notification permission, allow it when prompted
 | **Cannot sign in** | Confirm your IMISS credentials and whether a temporary password must first be changed on the main web portal. |
 | **No assigned tickets appear** | Check the selected status tab, then pull down to refresh. The app displays tickets assigned to your account. |
 | **New assignments are not appearing** | Refresh the queue and check that your device has connectivity to the IMISS service. |
-| **No assignment alerts** | Check whether app notifications are enabled on your Android device. |
+| **No assignment alerts** | Check notification permission, Do Not Disturb, connectivity, and whether battery settings restrict background activity. Open the app and refresh to check for assignments. |
+| **In-app update fails** | Check connectivity, retry using the app’s update feature, and contact your IMISS administrator if the problem continues. Do not uninstall the app as a first step. |
 | **App cannot reconnect** | Check connectivity to the IMISS environment and contact your IMISS administrator if the issue continues. |
 
 ## Frequently Asked Questions
@@ -161,17 +167,40 @@ Change the temporary password through the main IMISS web portal first, then sign
 **Why can’t I see a work log?**  
 The app shows work logs assigned to your account. Check **Open**, **In Progress**, and **Resolved**, then refresh. Contact your administrator if an expected assignment is still missing.
 
-**Where can I get the latest APK?**  
+**How do I update an installed app?**  
+Use the built-in update feature in IMISS Logs and follow the on-screen instructions. You do not need to uninstall the existing app.
+
+**Where can I get the latest APK for a new installation?**  
 Use the official [GitHub Releases page](https://github.com/nekofied143/IMISSReceiver/releases). Avoid third-party downloads.
+
+**Where can I see what changed in a release?**  
+Read the notes on the [Releases page](https://github.com/nekofied143/IMISSReceiver/releases).
 
 **Does the Downloads badge show the number of users?**  
 No. It counts GitHub release-asset downloads, not unique people, devices, or installations.
+
+## Privacy and Responsible Use
+
+Work-log concerns and remarks may contain operational or sensitive information. Follow your organization's privacy and information-handling policies when using IMISS Logs.
+
+- Record only information needed to document and resolve a work log.
+- Avoid including passwords, access tokens, or unnecessary patient or personal information in remarks or referrals.
+- Do not share screenshots, ticket details, or account credentials with unauthorized people.
+- Report suspected account misuse or accidental disclosure through your organization's approved channels.
+
+This section describes **staff usage practices**, not a claim about the app's encryption, storage, or data-retention implementation.
+
+## Support and Issue Reporting
+
+For login problems, missing assignments, update failures, or service concerns, contact your designated **IMISS system administrator**. When reporting a problem, include the app version (if known), Android version, a short description, and the steps that led to the issue.
+
+Do **not** include passwords, authentication tokens, patient details, or other sensitive work-log information in public GitHub issues. Share sensitive diagnostics only through approved internal channels.
 
 ## Usage and Access
 
 IMISS Logs is intended for **authorized IMISS technical staff**. It is a companion to the existing IMISS Work Logs system; staff authentication and work-log access are handled through the IMISS environment.
 
-For account access, installation assistance, or service-related concerns, contact your designated **IMISS system administrator**.
+For account access or permission changes, contact your designated **IMISS system administrator**.
 
 ---
 
