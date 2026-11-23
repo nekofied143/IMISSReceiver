@@ -1,43 +1,134 @@
 # IMISS Logs
 
-**IMISS Logs** is the Android mobile companion app for the **Integrated Management Information System Section (IMISS) Work Logs** system. It is designed as a focused, pocket-sized receiver for IMISS technical staff so they can monitor tickets assigned to them, update service progress in real time, and hand off tasks to colleagues when needed.
+![Platform](https://img.shields.io/badge/Platform-Android-3DDC84?logo=android&logoColor=white)
+![Minimum Android Version](https://img.shields.io/badge/Android-7.0%2B-3DDC84)
+![Interface](https://img.shields.io/badge/Interface-Material%203-6750A4)
+![Time Zone](https://img.shields.io/badge/Time%20Zone-PHT-2563EB)
 
----
+**IMISS Logs** is an Android companion app for the **Integrated Management Information System Section (IMISS) Work Logs** system. It helps IMISS technical staff monitor assigned work logs, update ticket progress, and refer active tasks to colleagues directly from their mobile devices.
+
+Designed for day-to-day technical support operations, the app keeps work-log management focused, accessible, and consistent across duty shifts.
 
 ## Overview
 
-Instead of navigating a full desktop dashboard on a phone, staff can sign in with their existing IMISS account and immediately see only the work logs assigned to them. Everything is organized around a clean, single-direction workflow—helping teams respond faster, keep ticket activity documented, and stay coordinated across shifts.
+IMISS Logs provides a mobile-friendly way to handle essential work-log activities without navigating the full desktop system. Staff sign in with their existing IMISS accounts to view assigned tickets, document progress, and coordinate handoffs when needed.
 
----
+The app supports three main goals:
+
+- **Visibility:** Keep assigned work logs organized and easy to review.
+- **Accountability:** Record ticket progress and referral reasons.
+- **Continuity:** Help staff transfer active work between colleagues or duty shifts.
 
 ## Key Features
 
-- **Staff Portal Access**
-  Sign in using your existing IMISS staff account with automatic session persistence and graceful server reconnection on startup.
-- **Assigned-Only Queue**
-  View only the work logs assigned to you, organized across **Open**, **In Progress**, and **Resolved** tabs with live ticket counts and smooth horizontal swiping.
-- **One-Tap Status Progression**
-  Move tickets forward from **Open → In Progress → Resolved** and optionally record remarks on the action taken, timestamped in Philippine Time (PHT).
-- **Staff Referral Workflow**
-  Refer an active work log to another staff member when passing work to the next duty shift or when unable to perform the task, with a required referral reason for clear team accountability.
-- **Assignment Alerts & Auto-Refresh**
-  Pull down to refresh anytime, or enable notifications to get alerted when new work logs arrive.
-- **Adaptive Light & Dark Design**
-  Clean Material 3 interface that automatically adapts to your device's light or dark theme on both phones and tablets.
+| Feature | Description |
+| --- | --- |
+| **Secure staff sign-in** | Access the app using an existing IMISS staff account, with session persistence and reconnection handling at startup. |
+| **Assigned work-log queue** | See only assigned tickets, organized into **Open**, **In Progress**, and **Resolved** tabs. |
+| **Status counts and navigation** | Review ticket counts and swipe horizontally between status tabs. |
+| **Ticket progress tracking** | Move work logs through **Open → In Progress → Resolved** and optionally add remarks to document actions taken. |
+| **Staff referrals** | Refer an active ticket to a colleague, selecting a referral category and entering a required reason. |
+| **Assignment notifications** | Receive alerts about newly assigned work logs when notifications are enabled. |
+| **Manual refresh** | Pull down to refresh the work-log queue on demand. |
+| **Adaptive appearance** | Use a Material 3 interface that follows the device's light or dark theme on supported phones and tablets. |
+| **Philippine Time** | View timestamped ticket remarks in **Philippine Time (PHT)** for consistent activity records. |
+
+## Getting Started
+
+### Requirements
+
+| Requirement | Details |
+| --- | --- |
+| **Device** | Android phone or tablet |
+| **Android version** | Android 7.0 (API level 24) or later |
+| **User account** | Active IMISS staff account |
+| **Initial password setup** | Temporary passwords must be changed through the main IMISS web portal before app sign-in. |
+
+### Installation
+
+The distribution method and installation package are not specified in this documentation. Obtain the approved IMISS Logs Android installation package or installation instructions from your IMISS administrator.
+
+1. Obtain the app through the **approved IMISS distribution channel**.
+2. Follow the installation instructions provided by your administrator.
+3. Open **IMISS Logs** after installation.
+4. Sign in using your existing IMISS staff credentials.
+
+> **Security note:** Install only packages distributed or approved by your organization. Do not download unofficial APKs or share your staff credentials.
+
+## Using the App
+
+### 1. Sign in
+
+Launch the app and enter your IMISS staff account credentials. If your account still uses a temporary password, update it through the main IMISS web portal before signing in.
+
+### 2. Review assigned tickets
+
+Use the three status tabs to organize your work:
+
+| Status | Meaning |
+| --- | --- |
+| **Open** | Assigned work that has not yet been started. |
+| **In Progress** | Work currently being handled. |
+| **Resolved** | Work marked as completed. |
+
+Swipe between tabs or select a tab directly. Pull down to refresh when you need the latest available work-log information.
+
+### 3. Update ticket progress
+
+1. Open an assigned ticket under **Open**.
+2. Tap **Start Progress** when you begin working on it.
+3. Add a remark if you need to document the action taken.
+4. When the work is complete, tap **Mark Resolved**.
+5. Add a final remark if needed.
+
+**Status flow:** `Open → In Progress → Resolved`
+
+### 4. Refer an active ticket
+
+When another staff member needs to take over an active work log:
+
+1. Select the active ticket and tap **Refer**.
+2. Choose the colleague who will receive the referral.
+3. Select the appropriate category:
+   - **Next Duty** — for a handoff to the next duty shift.
+   - **Unable to Perform** — when you cannot carry out the task.
+   - **Other** — for another referral reason.
+4. Enter the **required referral reason**.
+5. Complete the referral using the app's confirmation flow.
+
+A clear referral reason helps the receiving staff member understand why the task was handed over.
+
+### 5. Stay informed
+
+Enable app notifications if you want alerts for new assignments. You can also pull down to refresh the ticket list manually.
+
+## Quick Reference
+
+| I want to… | Action |
+| --- | --- |
+| Check new assigned work | Open the **Open** tab |
+| Begin working on a ticket | Tap **Start Progress** |
+| Record what I did | Add a ticket remark during a status update |
+| Complete a ticket | Tap **Mark Resolved** |
+| Hand off active work | Tap **Refer**, select a colleague and category, and enter a reason |
+| Check for updates | Pull down to refresh |
+
+## Troubleshooting
+
+| Issue | What to check |
+| --- | --- |
+| **Cannot sign in** | Confirm your IMISS credentials and whether a temporary password must first be changed on the main web portal. |
+| **No assigned tickets appear** | Check the selected status tab, then pull down to refresh. The app displays tickets assigned to your account. |
+| **New assignments are not appearing** | Refresh the queue and check that your device has connectivity to the IMISS service. |
+| **No assignment alerts** | Check whether app notifications are enabled on your Android device. |
+| **App cannot reconnect** | Check connectivity to the IMISS environment and contact your IMISS administrator if the issue continues. |
+
+## Usage and Access
+
+IMISS Logs is intended for **authorized IMISS technical staff**. It is a companion to the existing IMISS Work Logs system; staff authentication and work-log access are handled through the IMISS environment.
+
+For account access, installation assistance, or service-related concerns, contact your designated **IMISS system administrator**.
 
 ---
 
-## Typical Workflow
-
-1. **Sign In** — Log in with the staff credentials provided by your system administrator.
-2. **Track & Update** — Review incoming **Open** requests, tap **Start Progress** when beginning work, and **Mark Resolved** once completed.
-3. **Refer When Needed** — Tap **Refer** on an active ticket, choose a colleague, select a category (**Next Duty**, **Unable to Perform**, or **Other**), and enter your reason for the handoff.
-
----
-
-## Requirements
-
-- **Platform:** Android 7.0 (API 24) or higher
-- **Account:** Active IMISS staff account (first-time users should update any temporary password on the main IMISS web portal before signing in)
-
----
+*IMISS Logs — Manage assigned work, document progress, and coordinate handoffs from Android.*
